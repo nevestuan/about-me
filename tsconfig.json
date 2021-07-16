@@ -15,8 +15,12 @@
         "jsx": "preserve",
         "baseUrl": ".",
         "paths": {
-            "@components/*": ["src/components/*"],
-            "@components": ["src/components"],
+            "@components/*": ["src/modules/componentExamples/*"],
+            "@components": ["src/modules/componentExamples"],
+            "@components/icons/*": ["src/modules/componentExamples/icons/*"],
+            "@components/icons": ["src/modules/componentExamples/icons"],
+            "@core/*": ["src/modules/core/*"],
+            "@tridi/*": ["src/modules/tridi/*"],
             "@public/*": ["public/*"],
             "@public": ["public"],
             "@definitions/*": ["src/definitions/*"],
@@ -25,14 +29,17 @@
             "@interfaces": ["src/interfaces"],
             "@styles/*": ["src/styles/*"],
             "@styles": ["src/styles"],
-            "@components/icons/*": ["src/components/icons/*"],
-            "@components/icons": ["src/components/icons"],
             "@redux/*": ["src/redux/*"],
             "@redux": ["src/redux"],
             "@test/*": ["test/*"],
-            "@test": ["test"]
+            "@test": ["test"],
         }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "src/styles/globalStyles.js"
+    ],
     "exclude": ["node_modules", "test/*", "webdriverio/*"]
 }

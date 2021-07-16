@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 interface ICounter {
     count: number;
@@ -9,14 +9,14 @@ const initialState: ICounter = {
 };
 
 const counterSlice = createSlice({
-    name: "counter",
+    name: 'counter',
     initialState,
     reducers: {
         increase: (state) => {
-            state.count++;
+            state.count += 1;
         },
         decrease: (state) => {
-            state.count--;
+            state.count -= 1;
         },
     },
 });

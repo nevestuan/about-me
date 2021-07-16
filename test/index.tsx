@@ -1,12 +1,12 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement } from 'react';
 import {
     render as baseRender,
     RenderOptions,
     RenderResult,
-} from "@testing-library/react";
+} from '@testing-library/react';
 
-import { Provider } from "react-redux";
-import store from "@redux/store";
+import { Provider } from 'react-redux';
+import store from '@redux/store';
 
 /**
  * Custom renderer example with @testing-library/react
@@ -24,11 +24,11 @@ export const AllTheProviders = ({ children }) => {
     );
 };
 
-const render = (ui: ReactElement, options?: Omit<RenderOptions, "queries">) =>
+const render = (ui: ReactElement, options?: Omit<RenderOptions, 'queries'>) =>
     baseRender(ui, { wrapper: AllTheProviders, ...options }) as RenderResult;
 
 // re-export everything
-export * from "@testing-library/react";
+export * from '@testing-library/react';
 
 // override render method
 export { render };
