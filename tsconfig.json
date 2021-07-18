@@ -21,6 +21,7 @@
             "@components/icons": ["src/modules/componentExamples/icons"],
             "@core/*": ["src/modules/core/*"],
             "@tridi/*": ["src/modules/tridi/*"],
+            "@home/*": ["src/modules/home/*"],
             "@public/*": ["public/*"],
             "@public": ["public"],
             "@definitions/*": ["src/definitions/*"],
@@ -32,7 +33,7 @@
             "@redux/*": ["src/redux/*"],
             "@redux": ["src/redux"],
             "@test/*": ["test/*"],
-            "@test": ["test"],
+            "@test": ["test"]
         }
     },
     "include": [

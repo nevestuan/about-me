@@ -1,26 +1,21 @@
 import React, { FC } from 'react';
-import { Layout, Menu } from 'antd';
+import PageHeader from './PageHeader';
 
-const { Header, Content, Footer } = Layout;
-
-interface PageLayoutProps {
+interface IPageLayoutProps {
     children?: React.ReactNode;
 }
 
-const PageLayout: FC = ({ children = null }): PageLayoutProps => {
+const PageLayout: FC = ({ children = null }): IPageLayoutProps => {
     return (
-        <Layout className="layout">
-            <Header>
-                <div className="logo" />
-                <Menu mode="horizontal">
-                    <Menu.Item key="lab">Lab</Menu.Item>
-                </Menu>
-            </Header>
-            <Content style={{ padding: '0 50px' }}>{children}</Content>
-            <Footer style={{ textAlign: 'center' }}>
-                Ant Design ©2018 Created by Ant UED
-            </Footer>
-        </Layout>
+        <>
+            <header>
+                <PageHeader />
+            </header>
+            <div className="page-content">{children}</div>
+            <footer>
+                <div className="content-container">Created with passion ❤️</div>
+            </footer>
+        </>
     );
 };
 

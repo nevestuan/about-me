@@ -1,21 +1,13 @@
 import React from 'react';
 
-import { Header, Main, Cards, Footer } from 'src/modules/componentExamples';
+import { PageLayout } from '@core/components';
+import { HomeHero } from '@home/components';
 
 const Home: React.FC = () => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                flexDirection: 'column',
-                minHeight: '100vh',
-            }}
-        >
-            <Header />
-            <Main />
-            <Cards />
-            <Footer />
-        </div>
+        <PageLayout>
+            <HomeHero />
+        </PageLayout>
     );
 };
 

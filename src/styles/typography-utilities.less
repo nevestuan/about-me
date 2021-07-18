@@ -1,0 +1,140 @@
+@import './variables.less';
+
+.font-family-bold() {
+    font-family: @font-family-bold;
+    font-weight: bold;
+}
+.font-family-medium() {
+    font-family: @font-family-medium;
+}
+.font-family-semibold() {
+    font-family: @font-family-semibold;
+}
+
+.text-header {
+    .font-family-bold();
+    font-size: 32px;
+
+    &.section-header {
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: @screen-md-max) {
+        font-size: 25px;
+
+        &.section-header {
+            font-size: 20px;
+        }
+    }
+}
+
+.text-subheading {
+    font-size: 18px;
+
+    &.subheading-medium {
+        .font-family-medium();
+    }
+
+    &.subheading-semibold {
+        .font-family-semibold();
+    }
+
+    &.subheading-bold {
+        .font-family-bold();
+    }
+
+    @media screen and (max-width: @screen-md-max) {
+        font-size: 16px;
+    }
+}
+
+.text-footnote {
+    font-size: 12px;
+
+    &.footnote-bold {
+        .font-family-bold();
+    }
+}
+
+.text-family-bold {
+    .font-family-bold();
+}
+
+.text-color-primary {
+    color: @primary-color;
+}
+
+.text-color-danger {
+    color: @danger-color;
+}
+
+.text-color-disabled {
+    color: @disabled-color;
+}
+
+.text-color-warning {
+    color: @warning-color;
+}
+
+.text-color-link {
+    color: @link-color;
+}
+
+.text-color-success {
+    color: @success-color;
+}
+
+.text-color-pending {
+    color: @pending-color;
+}
+
+.is-strikethrough {
+    text-decoration: line-through;
+}
+
+body {
+    .body-medium {
+        .font-family-medium();
+    }
+
+    .body-semibold {
+        .font-family-semibold();
+    }
+
+    .body-bold {
+        .font-family-bold();
+    }
+
+    .body-2 {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: @screen-md-max) {
+        .body-2 {
+            font-size: 10px;
+        }
+    }
+}
+
+/* Typography */
+.has-text-primary-color {
+    color: @primary-color !important;
+}
+.has-text-info-color {
+    color: @info-color !important;
+}
+.has-text-grey-color {
+    color: @text-grey-color !important;
+}
+.has-text-center {
+    text-align: center;
+}
+.has-text-left {
+    text-align: left;
+}
+.has-text-underline {
+    text-decoration: underline;
+}
+.has-text-strikethrough {
+    text-decoration: line-through;
+}
