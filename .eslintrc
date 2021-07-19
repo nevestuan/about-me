@@ -42,14 +42,17 @@
     },
     "rules": {
         "prettier/prettier": ["error", { "singleQuote": true }],
+        "react/jsx-filename-extension": "off",
         "react/jsx-props-no-spreading": "off",
         "react/require-default-props": "off",
         "react/jsx-no-target-blank": "off",
         "react/prop-types": "off",
         "react/forbid-prop-types": "off",
+        "react/no-unescaped-entities": "off",
         "jsx-a11y/anchor-is-valid": "off",
         "import/no-extraneous-dependencies": "off",
         "import/prefer-default-export": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
         "no-param-reassign": "off"
     }
 }

@@ -35,8 +35,8 @@ const StyledHeader = styled.div`
 
 const NAV_CONFIG = [
     {
-        anchor: '#projects',
-        title: 'Projects',
+        anchor: '#portfolio',
+        title: 'Portfolio',
     },
     {
         anchor: '#credits',
@@ -44,8 +44,8 @@ const NAV_CONFIG = [
     },
 ];
 
-const PageHeader = (): FC => {
-    const renderNavItem = (item: INavItem): FC => {
+const PageHeader: FC = () => {
+    const renderNavItem = (item: INavItem) => {
         if (item.anchor) {
             return (
                 <li key={item.title} className="nav-item m-x-16">

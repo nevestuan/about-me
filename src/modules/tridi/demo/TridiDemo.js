@@ -1,4 +1,4 @@
-import React, { useState, useRef, FC } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button } from 'antd';
 import dynamic from 'next/dynamic';
 
@@ -6,7 +6,7 @@ import 'react-tridi/dist/index.css';
 
 const Tridi = dynamic(import('react-tridi'), { ssr: false });
 
-const TridiDemo: FC = () => {
+const TridiDemo = () => {
     const [isAutoPlayRunning, setIsAutoPlayRunning] = useState(false);
     const [pins, setPins] = useState([]);
     const tridiRef = useRef(null);

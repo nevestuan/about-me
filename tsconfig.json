@@ -41,6 +41,6 @@
         "**/*.ts",
         "**/*.tsx",
         "src/styles/globalStyles.js"
-    ],
+, "src/modules/tridi/demo/TridiDemo.js"    ],
     "exclude": ["node_modules", "test/*", "webdriverio/*"]
 }

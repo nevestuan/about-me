@@ -1,19 +1,18 @@
 const withPlugins = require('next-compose-plugins');
 const withAntdLess = require('next-plugin-antd-less');
+const lessToJS = require('less-vars-to-js');
 const fs = require('fs');
 const path = require('path');
-const cssVarsToJs = require('./server/utils/cssVarsToJs');
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true',
 });
 
-const themeVariables = cssVarsToJs(
+const themeVariables = lessToJS(
     fs.readFileSync(
-        path.resolve(__dirname, './src/styles/variables.css'),
+        path.resolve(__dirname, './src/styles/variables.less'),
         'utf8',
     ),
-    { replacePrefix: '@' },
 );
 
 const config = {

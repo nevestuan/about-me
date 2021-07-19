@@ -5,8 +5,7 @@ import { StyledThemeProvider } from '@definitions/styled-components';
 import { Provider } from 'react-redux';
 import store from '@redux/store';
 
-require('antd/dist/antd.less');
-require('@styles/app.less');
+require('../src/styles/app.less');
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     return (

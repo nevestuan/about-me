@@ -1,0 +1,23 @@
+body {
+    .ant-btn-gradient {
+        background-image: linear-gradient(
+            to right,
+            #fc6076,
+            #ff9a44,
+            #ef9d43,
+            #e75516
+        ) !important;
+        box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75) !important;
+        color: #fff !important;
+        border: none !important;
+        background-size: 300% 100% !important;
+        &:hover,
+        &:active,
+        &:focus {
+            background-position: 100% 0 !important;
+            -o-transition: all 0.4s ease-in-out !important;
+            -webkit-transition: all 0.4s ease-in-out !important;
+            transition: all 0.4s ease-in-out !important;
+        }
+    }
+}
