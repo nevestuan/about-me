@@ -7,10 +7,12 @@ import {
     MailOutlined,
 } from '@ant-design/icons';
 import Fade from 'react-reveal/Fade';
+import HeroParticles from './HeroParticles';
 
 const StyledWrapper = styled.div`
     width: 100vw;
     height: calc(100vh - 36px);
+    position: relative;
 
     .content-row {
         height: 100%;
@@ -44,8 +46,9 @@ const StyledWrapper = styled.div`
 
 const HomeHero: React.FC = () => {
     return (
-        <StyledWrapper className="content-container">
-            <Row className="content-row">
+        <StyledWrapper>
+            <HeroParticles />
+            <Row className="content-row content-container">
                 <Col className="content-left" xs={24} md={12}>
                     <Fade left>
                         <p className="greeting">Hi there 👋,</p>
