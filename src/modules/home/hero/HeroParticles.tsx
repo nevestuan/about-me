@@ -67,7 +67,6 @@ const HeroParticles: React.FC = () => {
                             },
                         },
                     },
-                    resize: true,
                 },
                 motion: {
                     reduce: {
